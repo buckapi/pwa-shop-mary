@@ -5863,7 +5863,8 @@ body i[class~=slick-arrow][class~=fa-angle-right] {
 }
 
 [class~=site-header] [class~=site-logo] img {
-  max-height: 24pt;
+/*   max-height: 24pt;
+ */  max-height: 50pt;
 }
 
 .site-header {
