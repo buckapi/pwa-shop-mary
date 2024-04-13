@@ -6,18 +6,14 @@ import { virtualRouter } from './services/virtualRouter.service'; // Asegúrate 
 import { GlobalService } from './services/global.service'; // Asegúrate de que la ruta sea correcta
 import { ScriptService } from './services/script.service';
 import { NgxSpinnerModule } from 'ngx-spinner';
-import { TopNavbarComponent } from './components/ui/top-navbar/top-navbar.component';
 import { VerticalNavComponent } from './components/ui/vertical-nav/vertical-nav.component';
-import { UserHomeComponent } from './components/user-home/user-home.component';
 import { AdminHomeComponent } from './components/admin-home/admin-home.component';
 import { LoginComponent } from './components/login/login.component';
-import { UserPaymentsComponent } from './components/user-payments/user-payments.component';
-import { UserRequestsComponent } from './components/user-requests/user-requests.component';
-import { SettingsComponent } from './components/settings/settings.component';
 import { HomeComponent } from './components/home/home.component';
 import { HeaderComponent } from './components/ui/header/header.component';
 import { FooterComponent } from './components/ui/footer/footer.component';
-import { HomeUserComponent } from './components/home-user/home-user.component';
+import { ShopComponent } from './components/shop/shop.component';
+import { CartComponent } from './components/cart/cart.component';
 
 
 @Component({
@@ -27,18 +23,14 @@ import { HomeUserComponent } from './components/home-user/home-user.component';
     NgxSpinnerModule,
     CommonModule, 
     RouterOutlet,
-    TopNavbarComponent,
     VerticalNavComponent,
-    UserHomeComponent,
     AdminHomeComponent,
-    UserPaymentsComponent,
     LoginComponent,
-    UserRequestsComponent,
-    SettingsComponent,
     HomeComponent,
     HeaderComponent,
     FooterComponent,
-    HomeUserComponent
+    ShopComponent,
+    CartComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
@@ -72,7 +64,7 @@ export class AppComponent {
 
     }
     ngOnInit(): void {
-      this.global.getConfig().subscribe(
+      /* this.global.getConfig().subscribe(
         (data) => {
           this.global.configs = data;
            // Asigna los registros obtenidos a la variable 'registros'
@@ -90,7 +82,7 @@ export class AppComponent {
         (error) => {
           console.error(error); // Manejo de errores si la solicitud falla
         }
-      );
+      ); */
     }
     toggleLayoutStyle() {
       if (this.layoutStyle === "default") {

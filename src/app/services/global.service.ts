@@ -16,8 +16,8 @@ import { ImageUploadService } from '@services/image-upload.service';
 })
 export class GlobalService {
 
-/*   private apiUrl = 'http://localhost:8090/api/collections/images/records';
- */  private apiUrl = '';
+  private apiUrl = 'http://localhost:8090/api/collections/images/records';
+ 
 
   
 /*   private apirestUrl = 'http://localhost:7777/api/';
@@ -29,6 +29,7 @@ export class GlobalService {
   categories: any[] = [];
   currentPage: number = 1;
   clients: any;
+  products: any;
   device: string = '';
   currentUser: any;
   ordersSize = 0;
@@ -71,7 +72,7 @@ export class GlobalService {
     const type = localStorage.getItem('type');
     const settings = localStorage.getItem('settings');
   
-    this.getConfig().subscribe(config => {
+    /* this.getConfig().subscribe(config => {
       if (isLoggedIn === null || isLoggedIn === undefined) {
         // Si no existe, redirigir a la página de inicio de sesión
         this.virtuallRouter.routerActive = "login";
@@ -92,7 +93,7 @@ export class GlobalService {
       if (!config) {
         this.virtuallRouter.routerActive = "settings";
       }
-    });
+    }); */
     // No hacer nada si isLoggedin es true (ya logueado)
   }
   //################## FIN FUNCIONES NUEVAS ########################################################################

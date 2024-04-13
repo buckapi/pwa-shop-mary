@@ -1966,7 +1966,7 @@ ul.slick-dots li button {
 }
 
 [class~=section][class~=bg-img-1] {
-  background-image: url("../../media/banner/bg-img-1.jpg");
+  background-image: url("assets/mary/media/banner/bg-img-1.jpg");
 }
 
 [class~=newsletter-popup] [class~=newsletter-container] [class~=newsletter-form] [class~=newsletter-input],.no-space .row {
@@ -1978,7 +1978,7 @@ input[type=password] {
 }
 
 .section.bg-img-2 {
-  background-image: url("../../media/banner/bg-img-2.jpg");
+  background-image: url("assets/mary/media/banner/bg-img-2.jpg");
 }
 
 [class~=pagination] ul li a:hover,[class~=button-outline][class~=border-black]:focus {
@@ -1990,15 +1990,15 @@ input[type=password] {
 }
 
 [class~=section][class~=bg-img-3] {
-  background-image: url("../../media/banner/bg-img-3.jpg");
+  background-image: url("assets/mary/media/banner/bg-img-3.jpg");
 }
 
 [class~=section][class~=bg-img-4] {
-  background-image: url("../../media/banner/bg-img-4.jpg");
+  background-image: url("assets/mary/media/banner/bg-img-4.jpg");
 }
 
 [class~=section][class~=bg-img-5] {
-  background-image: url("../../media/banner/bg-img-5.jpg");
+  background-image: url("assets/mary/media/banner/bg-img-5.jpg");
 }
 
 [class~=section-column-wrap] {
@@ -2010,7 +2010,7 @@ input[type=password] {
 }
 
 [class~=section][class~=bg-img-6] {
-  background-image: url("../../media/banner/bg-img-6.jpg");
+  background-image: url("assets/mary/media/banner/bg-img-6.jpg");
 }
 
 [class~=section-column-wrap] {
@@ -2018,7 +2018,7 @@ input[type=password] {
 }
 
 [class~=section][class~=bg-img-7] {
-  background-image: url("../../media/banner/bg-img-7.jpg");
+  background-image: url("assets/mary/media/banner/bg-img-7.jpg");
 }
 
 [class~=button-outline][class~=border-black]:focus {
@@ -10682,7 +10682,7 @@ body:not([class~=home]) [class~=site-navigation] ul > li[class~=level-0] > [clas
 4. Breadcrumbs
 =========================================================================*/
 .site-main .page-title {
-  background-image: url("../../media/site-header.jpg");
+  background-image: url("assets/mary/media/site-header.jpg");
 }
 
 .site-main .page-title,[class~=site-main] [class~=page-title] [class~=content-title-heading],[class~=site-main] [class~=page-title] [class~=breadcrumbs] [class~=delimiter]:before,[class~=site-main] [class~=page-title] [class~=breadcrumbs] a {
@@ -17789,7 +17789,7 @@ body[class~=home][class~=title-6] [class~=block-newsletter] [class~=newsletter-t
 }
 
 [class~=block-parallax][class~=bg-img-1] {
-  background-image: url("../../media/banner/parallax-bg-1.jpg");
+  background-image: url("assets/mary/media/banner/parallax-bg-1.jpg");
 }
 
 .block-contact-info .info-item .item-tilte h2 {
@@ -17857,7 +17857,7 @@ body[class~=home][class~=title-6] [class~=block-newsletter] [class~=newsletter-t
 }
 
 .block-parallax.bg-img-2 {
-  background-image: url("../../media/banner/parallax-bg-2.jpg");
+  background-image: url("assets/mary/media/banner/parallax-bg-2.jpg");
 }
 
 [class~=block-product-filter] [class~=filter-item] [class~=custom-checkbox] [class~=checkmark]:after {
@@ -17881,7 +17881,7 @@ body[class~=home][class~=title-6] [class~=block-newsletter] [class~=newsletter-t
 }
 
 [class~=block-parallax][class~=bg-img-3] {
-  background-image: url("../../media/banner/parallax-bg-3.jpg");
+  background-image: url("assets/mary/media/banner/parallax-bg-3.jpg");
 }
 
 [class~=block-instagram] a[class~=instagram]:hover img {
@@ -17933,7 +17933,7 @@ body[class~=home][class~=title-6] [class~=block-newsletter] [class~=newsletter-t
 }
 
 .block-parallax.bg-img-4 {
-  background-image: url("../../media/banner/parallax-bg-4.jpg");
+  background-image: url("assets/mary/media/banner/parallax-bg-4.jpg");
 }
 
 [class~=block-info] [class~=info-wrap] ul li {
