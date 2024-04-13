@@ -8,7 +8,6 @@ import { ScriptService } from './services/script.service';
 import { NgxSpinnerModule } from 'ngx-spinner';
 import { VerticalNavComponent } from './components/ui/vertical-nav/vertical-nav.component';
 import { AdminHomeComponent } from './components/admin-home/admin-home.component';
-import { LoginComponent } from './components/login/login.component';
 import { HomeComponent } from './components/home/home.component';
 import { HeaderComponent } from './components/ui/header/header.component';
 import { FooterComponent } from './components/ui/footer/footer.component';
@@ -25,7 +24,6 @@ import { CartComponent } from './components/cart/cart.component';
     RouterOutlet,
     VerticalNavComponent,
     AdminHomeComponent,
-    LoginComponent,
     HomeComponent,
     HeaderComponent,
     FooterComponent,

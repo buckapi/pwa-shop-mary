@@ -337,7 +337,7 @@
     display: none;
   }
   .home .site-header.header-v1 {
-    position: absolute;
+    position: fixed;
     width: 100%;
   }
   .home .site-header.header-v1.relative {
@@ -353,7 +353,7 @@
 
 @media (max-width: 991px) {
   .site-header.color-white {
-    background: #000;
+    background: #cb8161;
   }
   .site-header .header-desktop {
     display: none;
@@ -873,7 +873,8 @@
     padding: 0 0 0 25px;
   }
   .block-sliders.auto-height .item-content .content-image img {
-    min-height: 350px;
+/*     min-height: 350px;
+ */    min-height: 665px;
     object-fit: cover;
   }
   .block-sliders .item-content .item-info .title-slider {

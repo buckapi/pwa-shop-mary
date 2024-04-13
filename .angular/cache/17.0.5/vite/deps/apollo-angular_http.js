@@ -1,12 +1,12 @@
 import {
-  HttpClient,
-  HttpHeaders
-} from "./chunk-DEUKAPQG.js";
-import {
   ApolloLink,
   Observable as Observable2,
   print
 } from "./chunk-U5MXB6Q6.js";
+import {
+  HttpClient,
+  HttpHeaders
+} from "./chunk-DEUKAPQG.js";
 import "./chunk-EAXSKJ27.js";
 import {
   Injectable,

@@ -4,12 +4,17 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class Yeoman {
+  allcategory:any=[];
+  allCategoriesSize:number=0;
+  
+  posts:any=[];
+  categories:any=[];
   all:any=[];
   articulos:any[][]=[];
   categorySelected="";
   catalogo:any[]=[];
   catalogoCargado=false;
-  categories:any[]=[];
+  // categories:any[]=[];
   client:any;
   clientEmail:any;
   clientFicha:any={"clrepresentante":""};
@@ -29,7 +34,7 @@ export class Yeoman {
   goMessage="";
   idClient:any;
   idDist:any;
-  imagesUrl="https://www.click2order.app/img-API/server/local-storage/tixsImages/"
+  imagesUrl="https://www.buckapi.com/imgApi/server/local-storage/tixsImages/"
   indexPreviewCli:number=0;
   indexPreviewDist:number=0;
   myOrders:any;
@@ -39,7 +44,7 @@ export class Yeoman {
   ordersFinished:any[]=[];
   ordersNew:any[]=[];
   ordersProcessing:any[]=[];
-  origin: { name: string; restUrl: string; GQLUrl: string; } = { name: "default", restUrl: "https://db.click2order.app:7777", GQLUrl: "<origin GQL url>" };
+  origin: { name: string; restUrl: string; GQLUrl: string; } = { name: "default", restUrl: "https://db.buckapi.com:7056", GQLUrl: "<origin GQL url>" };
   pop:Boolean=false;
   preview:any={};
   previewArticulo:any={"arnombre":""};
@@ -81,7 +86,7 @@ export class Yeoman {
     this.goMessage = "";
     this.idClient = null;
     this.idDist = null;
-    this.imagesUrl = "https://www.click2order.app/img-API/server/local-storage/tixsImages/";
+    this.imagesUrl = "https://www.buckapi.com/imgApi/server/local-storage/tixsImages/";
     this.indexPreviewCli = 0;
     this.indexPreviewDist = 0;
     this.myOrders = null;
@@ -91,7 +96,7 @@ export class Yeoman {
     this.ordersFinished = [];
     this.ordersNew = [];
     this.ordersProcessing = [];
-    this.origin = {      name: "default",      restUrl: "https://db.click2order.app:7777",      GQLUrl: "<origin GQL url>",    };
+    this.origin = {      name: "default",      restUrl: "https://db.buckapi.com:7056",      GQLUrl: "<origin GQL url>",    };
     this.pop = false;
     this.preview = {};
     this.previewArticulo = { "arnombre": "" };

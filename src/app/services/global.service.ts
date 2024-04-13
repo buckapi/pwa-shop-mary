@@ -16,7 +16,7 @@ import { ImageUploadService } from '@services/image-upload.service';
 })
 export class GlobalService {
 
-  private apiUrl = 'http://localhost:8090/api/collections/api/collections/category/records/';
+  private apiUrl = 'https://db.buckapi.com:7056';
  
 /*   private apirestUrl = 'http://localhost:7777/api/';
  */  private apirestUrl = '';
