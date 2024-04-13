@@ -6551,7 +6551,7 @@ body i[class~=slick-arrow][class~=fa-angle-right] {
 }
 
 [class~=site-menu-wrapper] [class~=navbar-default],.site-header {
-  background: transparent;
+  background: #cb816178;
 }
 
 [class~=mini-cart] [class~=cart-popup] [class~=mini-cart-item] a[class~=remove]:hover {
