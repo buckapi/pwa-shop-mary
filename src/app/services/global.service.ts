@@ -143,13 +143,7 @@ export class GlobalService {
     }
     return null;
   }
-  getClientDetail(url: any, cliCodigo: any) {
-    this.dataApiService.getCliente(url, cliCodigo).subscribe((res: any) => {
-      this.clientDetail = res[0];
-      localStorage.setItem('clientFicha', JSON.stringify(res));
-      this.obtenerFichaCliente();
-    });
-  }
+ 
   obtenerFichaCliente() {
     let clientFichaString = localStorage.getItem('clientFicha');
     if (clientFichaString !== null) {

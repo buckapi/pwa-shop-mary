@@ -356,7 +356,7 @@
                                   </a>
                                   <div class="product-cat-content-info">
                                     <h2 class="item-title">
-                                      <a href="#">Bracelets</a>
+                                      <a >-....</a>
                                     </h2>
                                   </div>
                                 </div>
@@ -542,7 +542,7 @@
               </div>
             </section>
 
-            <section class="section section-padding top-border p-t-70 m-b-70">
+            <section class="section section-padding top-border p-t-70 m-b-70" >
               <div class="section-container">
                 <!-- Block Products (Layout 2) -->
                 <div class="block block-products layout-2 border-item slider">
@@ -554,9 +554,9 @@
                       <div class="content-product-list slick-wrap">
                         <div class="slick-sliders products-list grid" data-slidestoscroll="true" data-dots="false"
                           data-nav="1" data-columns4="1" data-columns3="2" data-columns2="3" data-columns1="3"
-                          data-columns1440="4" data-columns="4">
-                          <div class="item-product slick-slide">
-                            <div class="items">
+                          data-columns1440="4" data-columns="4" >
+                          <div class="item-product slick-slide" *ngFor="let product of yeoman.products;let i = index"  (click)="setPreview(i)" style="cursor: pointer;">
+                            <div class="items" >
                               <div class="products-entry clearfix product-wapper">
                                 <div class="products-thumb">
                                   <div class="product-lable">
@@ -584,7 +584,7 @@
                                 <div class="products-content">
                                   <div class="contents">
 
-                                    <h3 class="product-title"><a href="#">Medium Flat Hoops</a></h3>
+                                    <h3 class="product-title"><a href="#">{{product.name}}</a></h3>
                                     <span class="price">$100.00</span>
                                   </div>
                                 </div>
