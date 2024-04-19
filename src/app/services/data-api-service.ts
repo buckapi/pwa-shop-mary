@@ -167,6 +167,11 @@ export class DataApiService {
 		return this.http.get(url_api);
 	}
 
+	getCategory(id: string){
+		const url_api = this.yeoman.origin.restUrl+ `/api/categories/${id}`;
+		return this.http.get(url_api);
+	}
+
 	
 
 

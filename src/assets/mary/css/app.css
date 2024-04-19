@@ -6208,7 +6208,7 @@ body i[class~=slick-arrow][class~=fa-angle-right] {
 }
 
 [class~=site-header] [class~=header-desktop] {
-  padding-bottom: .3125in;
+  padding-bottom: .1in;
 }
 
 [class~=form-login-register] [class~=box-form-login] [class~=rememberme-lost] [class~=inline]:before {
@@ -6216,7 +6216,7 @@ body i[class~=slick-arrow][class~=fa-angle-right] {
 }
 
 [class~=site-header] [class~=header-desktop] {
-  padding-top: .3125in;
+  padding-top: .1in;
 }
 
 [class~=site-header][class~=header-v3] [class~=header-middle] {

@@ -13,6 +13,9 @@ import { HeaderComponent } from './components/ui/header/header.component';
 import { FooterComponent } from './components/ui/footer/footer.component';
 import { ShopComponent } from './components/shop/shop.component';
 import { CartComponent } from './components/cart/cart.component';
+import { AboutComponent } from './components/about/about.component';
+import { CheckoutComponent } from './components/checkout/checkout.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 
 @Component({
@@ -28,13 +31,16 @@ import { CartComponent } from './components/cart/cart.component';
     HeaderComponent,
     FooterComponent,
     ShopComponent,
-    CartComponent
+    CartComponent,
+    AboutComponent,
+    CheckoutComponent,
+    ContactComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'EmployesApp';
+  title = 'shop';
   layoutStyle: string = "default";
   deviceInfo: any = null
   constructor(

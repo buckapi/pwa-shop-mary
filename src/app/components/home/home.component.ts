@@ -15,6 +15,7 @@ import { Yeoman } from '@app/services/yeoman.service';
 })
 export class HomeComponent {
   allProducts:any;
+  category:any;
 constructor(
   public virtualRouter: virtualRouter,
   public yeoman: Yeoman,
@@ -40,10 +41,10 @@ getAllProducts(){
 }
 getAllCategories() {
   this.dataApiService.getAllCategory().subscribe(response => {
-    this.yeoman.categories = response;
+   /*  this.yeoman.categories = response; */
     this.yeoman.allcategory = response;
-    this.yeoman.allCategoriesSize = this.yeoman.categories.length;
-  });
+/*     this.yeoman.allCategoriesSize = this.yeoman.categories.length;
+ */  });
 }
 
 }
