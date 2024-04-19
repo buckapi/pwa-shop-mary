@@ -36,7 +36,6 @@ getAllProducts(){
  
   this.dataApiService.getAllProducts().subscribe(response=>{
     this.yeoman.products=response;
-    console.log('getAllProducts() se ha llamado correctamente.');
 
   });
 }
