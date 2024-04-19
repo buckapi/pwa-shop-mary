@@ -10,7 +10,7 @@
           </div>
           <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-6 header-center">
             <div class="site-logo">
-              <a href="#">
+              <a (click)="virtualRouter.setRoute('home')" style="cursor: pointer;">
                 <img  src="assets/mary/media/logo.png" alt="Shop Store " />
               </a>
             </div>
@@ -79,13 +79,13 @@
     <div class="header-mobile-fixed">
      
       <div class="shop-page">
-        <a href="#"><i class="wpb-icon-shop"></i></a>
+        <a (click)="virtualRouter.setRoute('shop')"><i class="wpb-icon-shop"></i></a>
       </div>
 
    
       <div class="my-account">
         <div class="login-header">
-          <a href="#"><i class="wpb-icon-user"></i></a>
+          <a ><i class="wpb-icon-user"></i></a>
         </div>
       </div>
 
@@ -100,7 +100,7 @@
           <div class="row">
             <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12 header-left">
               <div class="site-logo">
-                <a href="#">
+                <a (click)="virtualRouter.setRoute('home')" style="cursor: pointer;">
                   <img  src="assets/mary/media/logo.png" alt="Shop Store " />
                 </a>
               </div>
@@ -111,17 +111,17 @@
                 <nav id="main-navigation">
                   <ul id="menu-main-menu" class="menu">
                     <li class="level-0 menu-item  current-menu-item">
-                      <a href="index.html"><span class="menu-item-text">Home</span></a>
+                      <a (click)="virtualRouter.setRoute('home')" style="cursor: pointer;" ><span class="menu-item-text">Home</span></a>
 
                     </li>
                     <li class="level-0 menu-item menu-item-has-children">
-                      <a (click)="virtualRouter.setRoute('shop')"><span class="menu-item-text">Shop</span></a>
+                      <a (click)="virtualRouter.setRoute('shop')" style=" cursor: pointer;"><span class="menu-item-text">Shop</span></a>
                       <ul class="sub-menu">
                         <li>
-                          <a href="#"><span class="menu-item-text">Shop Category</span></a>
+                          <a (click)="virtualRouter.setRoute('shop')"><span class="menu-item-text">Shop Category</span></a>
                         </li>
                         <li>
-                          <a href="#"><span class="menu-item-text">Shop Category</span></a>
+                          <a (click)="virtualRouter.setRoute('shop')"><span class="menu-item-text">Shop Category</span></a>
                         </li>
 
                       </ul>
@@ -134,10 +134,10 @@
                           <a (click)="virtualRouter.setRoute('about')" style=" cursor: pointer;"><span class="menu-item-text">About</span></a>
                         </li>
                         <li>
-                          <a (click)="virtualRouter.setRoute('faq')"><span class="menu-item-text">FAQ</span></a>
+                          <a (click)="virtualRouter.setRoute('faq')" style=" cursor: pointer;"><span class="menu-item-text">FAQ</span></a>
                         </li>
                         <li>
-                          <a (click)="virtualRouter.setRoute('contact')"><span class="menu-item-text">Contact</span></a>
+                          <a (click)="virtualRouter.setRoute('contact')" style=" cursor: pointer;"><span class="menu-item-text">Contact</span></a>
                         </li>
                       </ul>
                     </li>

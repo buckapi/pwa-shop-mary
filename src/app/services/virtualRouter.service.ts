@@ -10,7 +10,7 @@ export class virtualRouter {
 
   }
    routerActive:string= "home";
-   setRoute(route: string) {
+ /*   setRoute(route: string) {
     const userType = this.authRESTService.getType();
   
     switch (route) {
@@ -52,6 +52,34 @@ export class virtualRouter {
           default:
             console.error('Tipo de usuario no reconocido');
         }
+        break;
+      default:
+        console.error('Ruta no reconocida');
+    }
+  } */
+  
+  setRoute(route: string) {
+    switch (route) {
+      case 'home':
+        this.routerActive = 'home';
+        break;
+      case 'about':
+        this.routerActive = 'about';
+        break;
+      case 'contact':
+        this.routerActive = 'contact';
+        break;
+      case 'cart':
+        this.routerActive = 'cart';
+        break;
+        case 'checkout':
+        this.routerActive = 'checkout';
+        break;
+        case 'faqs':
+        this.routerActive = 'faqs';
+        break;
+        case 'shop':
+        this.routerActive = 'shop';
         break;
       default:
         console.error('Ruta no reconocida');
