@@ -81,6 +81,9 @@ export class virtualRouter {
         case 'shop':
         this.routerActive = 'shop';
         break;
+        case 'detail':
+        this.routerActive = 'detail';
+        break;
       default:
         console.error('Ruta no reconocida');
     }

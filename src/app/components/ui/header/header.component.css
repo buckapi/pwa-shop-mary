@@ -1,0 +1,15 @@
+.header-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Ajusta este valor según sea necesario */
+}
+
+.header-desktop {
+/*   background-color: #f18a7775; 
+ */  background-color: #f18a77db;
+  
+  /* Cambia esto al color de fondo deseado */
+  /* Agrega otros estilos de tu menú aquí */
+}

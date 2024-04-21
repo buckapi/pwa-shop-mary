@@ -6,7 +6,6 @@ import { virtualRouter } from './services/virtualRouter.service'; // Asegúrate 
 import { GlobalService } from './services/global.service'; // Asegúrate de que la ruta sea correcta
 import { ScriptService } from './services/script.service';
 import { NgxSpinnerModule } from 'ngx-spinner';
-import { VerticalNavComponent } from './components/ui/vertical-nav/vertical-nav.component';
 import { AdminHomeComponent } from './components/admin-home/admin-home.component';
 import { HomeComponent } from './components/home/home.component';
 import { HeaderComponent } from './components/ui/header/header.component';
@@ -16,6 +15,7 @@ import { CartComponent } from './components/cart/cart.component';
 import { AboutComponent } from './components/about/about.component';
 import { CheckoutComponent } from './components/checkout/checkout.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { DetailComponent } from './components/detail/detail.component';
 
 
 @Component({
@@ -25,7 +25,6 @@ import { ContactComponent } from './components/contact/contact.component';
     NgxSpinnerModule,
     CommonModule, 
     RouterOutlet,
-    VerticalNavComponent,
     AdminHomeComponent,
     HomeComponent,
     HeaderComponent,
@@ -34,7 +33,8 @@ import { ContactComponent } from './components/contact/contact.component';
     CartComponent,
     AboutComponent,
     CheckoutComponent,
-    ContactComponent
+    ContactComponent,
+    DetailComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'

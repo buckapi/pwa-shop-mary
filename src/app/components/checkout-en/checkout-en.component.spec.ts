@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { VerticalNavComponent } from './vertical-nav.component';
+import { CheckoutENComponent } from './checkout-en.component';
 
-describe('VerticalNavComponent', () => {
-  let component: VerticalNavComponent;
-  let fixture: ComponentFixture<VerticalNavComponent>;
+describe('CheckoutENComponent', () => {
+  let component: CheckoutENComponent;
+  let fixture: ComponentFixture<CheckoutENComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [VerticalNavComponent]
+      imports: [CheckoutENComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(VerticalNavComponent);
+    fixture = TestBed.createComponent(CheckoutENComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

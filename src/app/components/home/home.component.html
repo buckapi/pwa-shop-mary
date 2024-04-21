@@ -17,9 +17,10 @@
                       </div>
                       <div class="item-info horizontal-start vertical-middle">
                         <div class="content">
-                          <h2 class="title-slider">Discover a <br>world of jewelry</h2>
-                          <a class="button-slider button button-white button-outline thick-border" href="shop-grid-left.html">Explore Bestseller</a>
-                        </div>
+                          <h2 class="title-slider">Bienvenidas a Coral!</h2>
+                          <p class="subtitle-slider">Encuentra los productos más destacados y exclusivos para realzar tu estilo.</p>
+                          <a class="button-slider button button-white button-outline thick-border">Explorar lo más vendido</a>
+                      </div>
                       </div>
                     </div>
                   </div>
@@ -30,8 +31,9 @@
                       </div>
                       <div class="item-info horizontal-start vertical-middle">
                         <div class="content">
-                          <h2 class="title-slider">Discover the<br> Best of the Best</h2>
-                          <a class="button-slider button button-white button-outline thick-border" href="shop-grid-left.html">Explore Bestseller</a>
+                          <h2 class="title-slider">Accesorios y moda femenina Coral!</h2>
+                          <p class="subtitle-slider">Explora nuestra colección y encuentra los mejores complementos para tu estilo.</p>
+                          <a class="button-slider button button-white button-outline thick-border">Explorar la colección</a>
                         </div>
                       </div>
                     </div>
@@ -43,8 +45,9 @@
                       </div>
                       <div class="item-info horizontal-start vertical-middle">
                         <div class="content">
-                          <h2 class="title-slider">Oh,<br> Hello Newness!</h2>
-                          <a class="button-slider button button-white button-outline thick-border" href="shop-grid-left.html">Explore Bestseller</a>
+                          <h2 class="title-slider">Productos y tips Coral</h2>
+                          <p class="subtitle-slider">Descubre las últimas tendencias y novedades en accesorios y moda femenina.</p>
+                          <a class="button-slider button button-white button-outline thick-border">Explorar las novedades</a>
                         </div>
                       </div>
                     </div>
@@ -60,9 +63,9 @@
                     <div class="row">
                       <div class="col-md-4">
                         <div class="text-wrap">
-                          <div class="sub-title">Find Your Favourites</div>
-                          <h2 class="title">Add to your jewellery <br>wardrobe</h2>
-                          <a href="#" class="button button-outline border-black thick-border animation-horizontal">All Categories</a>
+                          <div class="sub-title">Encuentra tus favoritos</div>
+                          <h2 class="title">Añádelo a tu armario de accesorios y prendas</h2>
+                          <a href="#" class="button button-outline border-black thick-border animation-horizontal">Todas las categorias</a>
                         </div>
                       </div>
                       <div class="col-md-8">
@@ -102,7 +105,7 @@
                 <div class="block block-products layout-2 border-item slider">
                   <div class="block-widget-wrap">
                     <div class="block-title">
-                      <h2>New products</h2>
+                      <h2>Nuevos productos</h2>
                     </div>
                     <div class="block-content">
                       <div class="content-product-list slick-wrap">
@@ -118,19 +121,20 @@
                                   </div>
                                   <div class="product-thumb-hover">
                                     <a href="#">
-                                      <img width="600" height="600" src="assets/mary/media/product/6.jpg"
-                                        class="post-image" alt="">
+                                      <img width="600" height="600" src="{{product.images[0]}}"
+                                        class="post-image" alt="" *ngIf="product.images[0]!==undefined">
                                       <img width="600" height="600" src="assets/mary/media/product/6-2.jpg"
                                         class="hover-image back" alt="">
+                                        
                                     </a>
                                   </div>
                                   <div class="product-button">
                                     <div class="btn-add-to-cart" data-title="Add to cart">
-                                      <a rel="nofollow" href="#" class="product-btn button">Add to cart</a>
+                                      <a rel="nofollow" href="#" class="product-btn button">Agregar al carro</a>
                                     </div>
 
                                     <span class="product-quickview" data-title="Quick View">
-                                      <a href="#" class="quickview quickview-button">Quick View <i
+                                      <a href="#" class="quickview quickview-button">Ver detalles <i
                                           class="icon-search"></i></a>
                                     </span>
                                   </div>
@@ -138,8 +142,9 @@
                                 <div class="products-content">
                                   <div class="contents">
 
-                                    <h3 class="product-title"><a href="#">{{product.name}}</a></h3>
-                                    <span class="price">$100.00</span>
+                                    <h3 class="product-title"><a (click)="virtualRouter.setRoute('detail')">{{product.name}}</a></h3>
+                                     <span class="price">${{product.price}}</span>
+
                                   </div>
                                 </div>
                               </div>

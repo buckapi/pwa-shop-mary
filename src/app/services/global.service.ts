@@ -19,7 +19,8 @@ export class GlobalService {
   private apiUrl = 'https://db.buckapi.com:7056';
  
 /*   private apirestUrl = 'http://localhost:7777/api/';
- */  private apirestUrl = '';
+ */  private apirestUrl = 'https://db.buckapi.com:7056';
+ modaltype='login';
   employes: any[] = [];
   configs: any[] = [];
   info: any[] = [];
