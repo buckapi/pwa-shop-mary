@@ -1,98 +1,89 @@
 {
-  "hash": "5fcd780b",
-  "browserHash": "fb650def",
+  "hash": "00a6fbe6",
+  "browserHash": "79ccb771",
   "optimized": {
     "@angular/common": {
       "src": "../../../../../node_modules/@angular/common/fesm2022/common.mjs",
       "file": "@angular_common.js",
-      "fileHash": "d0c547a7",
+      "fileHash": "c3f1f987",
       "needsInterop": false
     },
     "@angular/common/http": {
       "src": "../../../../../node_modules/@angular/common/fesm2022/http.mjs",
       "file": "@angular_common_http.js",
-      "fileHash": "71b49f83",
+      "fileHash": "bcc4d7cd",
       "needsInterop": false
     },
     "@angular/core": {
       "src": "../../../../../node_modules/@angular/core/fesm2022/core.mjs",
       "file": "@angular_core.js",
-      "fileHash": "d4dec31a",
+      "fileHash": "edf121d4",
       "needsInterop": false
     },
     "@angular/platform-browser": {
       "src": "../../../../../node_modules/@angular/platform-browser/fesm2022/platform-browser.mjs",
       "file": "@angular_platform-browser.js",
-      "fileHash": "5a46baec",
+      "fileHash": "eeb964a5",
       "needsInterop": false
     },
     "@angular/router": {
       "src": "../../../../../node_modules/@angular/router/fesm2022/router.mjs",
       "file": "@angular_router.js",
-      "fileHash": "567a193f",
+      "fileHash": "2ba49513",
       "needsInterop": false
     },
     "@apollo/client/core": {
       "src": "../../../../../node_modules/@apollo/client/core/index.js",
       "file": "@apollo_client_core.js",
-      "fileHash": "f5cede1e",
+      "fileHash": "ff9a034b",
       "needsInterop": false
     },
     "apollo-angular": {
       "src": "../../../../../node_modules/apollo-angular/fesm2022/ngApollo.mjs",
       "file": "apollo-angular.js",
-      "fileHash": "8da2e2dd",
+      "fileHash": "7039f648",
       "needsInterop": false
     },
     "apollo-angular/http": {
       "src": "../../../../../node_modules/apollo-angular/fesm2022/ngApolloLinkHttp.mjs",
       "file": "apollo-angular_http.js",
-      "fileHash": "06885ae0",
-      "needsInterop": false
-    },
-    "ng-gallery": {
-      "src": "../../../../../node_modules/ng-gallery/fesm2022/ng-gallery.mjs",
-      "file": "ng-gallery.js",
-      "fileHash": "4ad75250",
+      "fileHash": "8cc35879",
       "needsInterop": false
     },
     "ngx-device-detector": {
       "src": "../../../../../node_modules/ngx-device-detector/fesm2022/ngx-device-detector.mjs",
       "file": "ngx-device-detector.js",
-      "fileHash": "7156f740",
+      "fileHash": "125bfcc3",
       "needsInterop": false
     },
     "ngx-spinner": {
       "src": "../../../../../node_modules/ngx-spinner/fesm2022/ngx-spinner.mjs",
       "file": "ngx-spinner.js",
-      "fileHash": "f2524f52",
+      "fileHash": "152907f1",
       "needsInterop": false
     },
     "pocketbase": {
       "src": "../../../../../node_modules/pocketbase/dist/pocketbase.es.mjs",
       "file": "pocketbase.js",
-      "fileHash": "f49c0f53",
+      "fileHash": "5ebad5a4",
       "needsInterop": false
     },
     "rxjs": {
       "src": "../../../../../node_modules/rxjs/dist/esm5/index.js",
       "file": "rxjs.js",
-      "fileHash": "629ef824",
+      "fileHash": "53fd69fc",
       "needsInterop": false
     },
     "rxjs/operators": {
       "src": "../../../../../node_modules/rxjs/dist/esm5/operators/index.js",
       "file": "rxjs_operators.js",
-      "fileHash": "55b11ab2",
+      "fileHash": "c6896148",
       "needsInterop": false
     }
   },
   "chunks": {
     "chunk-U5MXB6Q6": {
       "file": "chunk-U5MXB6Q6.js"
-    },
-    "chunk-JSRGJLMS": {
-      "file": "chunk-JSRGJLMS.js"
     },
     "chunk-IJ723KUQ": {
       "file": "chunk-IJ723KUQ.js"

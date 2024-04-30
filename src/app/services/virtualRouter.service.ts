@@ -59,6 +59,7 @@ export class virtualRouter {
   } */
   
   setRoute(route: string) {
+    console.log('Ruta recibida:', route);
     switch (route) {
       case 'home':
         this.routerActive = 'home';
@@ -72,21 +73,22 @@ export class virtualRouter {
       case 'cart':
         this.routerActive = 'cart';
         break;
-        case 'checkout':
+      case 'checkout':
         this.routerActive = 'checkout';
         break;
-        case 'faqs':
+      case 'faqs':
         this.routerActive = 'faqs';
         break;
-        case 'shop':
+      case 'shop':
         this.routerActive = 'shop';
         break;
-        case 'detail':
+      case 'detail':
         this.routerActive = 'detail';
         break;
       default:
         console.error('Ruta no reconocida');
     }
   }
+  
   
 }

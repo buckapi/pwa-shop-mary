@@ -26,24 +26,24 @@ const galleryConfig: GalleryConfig = {
   imageSize: 'cover'
 };
 
-export const appConfig: ApplicationConfig = {
-
-  providers: [
-    provideRouter(routes),
-    NgxSpinnerService,
-    
-    NgxSpinnerModule,
-    provideHttpClient(),
-    graphqlProvider,
-    {
-      provide: GALLERY_CONFIG,
-      useValue: galleryConfig
-    }, provideHttpClient(), graphqlProvider
-  ],
-  // ... cualquier otra configuración necesaria
-};
-
 // export const appConfig: ApplicationConfig = {
+
 //   providers: [
-//     provideRouter(routes), provideHttpClient(), graphqlProvider]
+//     provideRouter(routes),
+//     NgxSpinnerService,
+    
+//     NgxSpinnerModule,
+//     provideHttpClient(),
+//     graphqlProvider,
+//     {
+//       provide: GALLERY_CONFIG,
+//       useValue: galleryConfig
+//     }, provideHttpClient(), graphqlProvider
+//   ],
+//   // ... cualquier otra configuración necesaria
 // };
+
+export const appConfig: ApplicationConfig = {
+  providers: [
+    provideRouter(routes), provideHttpClient(), graphqlProvider]
+};

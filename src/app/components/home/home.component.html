@@ -71,13 +71,13 @@
                       <div class="col-md-8">
                         <div class="product-cats-list slick-wrap">
                           <div class="slick-sliders content-category" data-dots="0" data-slidestoscroll="true" data-nav="0" data-columns4="1" data-columns3="2" data-columns2="2" data-columns1="3" data-columns1440="3" data-columns="3">
-                            <div class="slick-item slick-slide" *ngFor="let category of yeoman.allcategory;let i = index"  (click)="setPreview(i)" style="cursor: pointer;">
+                            <div class="slick-item slick-slide" *ngFor="let category of yeoman.allcategory; let i = index"  (click)="setPreview(i)" style="cursor: pointer;">
                               <div class="item item-product-cat">	
                                 <div class="item-product-cat-content">
                                   <a href="#">
                                     <div class="item-image animation-horizontal">
-                                      <img width="298" height="224" src="assets/mary/media/product/cat-6-1.jpg" alt="Bracelets">
-                                    </div>
+<!--                                       <img width="298" height="224" src="{{category.images[0]}}" alt="Bracelets">
+ -->                                    </div>
                                   </a>
                                   <div class="product-cat-content-info">
                                     <h2 class="item-title">
@@ -112,29 +112,29 @@
                         <div class="slick-sliders products-list grid" data-slidestoscroll="true" data-dots="false"
                           data-nav="1" data-columns4="1" data-columns3="2" data-columns2="3" data-columns1="3"
                           data-columns1440="4" data-columns="4" >
-                          <div class="item-product slick-slide" *ngFor="let product of yeoman.products;let i = index"  (click)="setPreview(i)" style="cursor: pointer;">
+                          <div class="item-product slick-slide" *ngFor="let product of yeoman.products;let i = index"   style="cursor: pointer;">
                             <div class="items" >
                               <div class="products-entry clearfix product-wapper">
                                 <div class="products-thumb">
-                                  <div class="product-lable">
+                                 <!--  <div class="product-lable">
                                     <div class="hot">Hot</div>
-                                  </div>
+                                  </div> -->
                                   <div class="product-thumb-hover">
                                     <a href="#">
                                       <img width="600" height="600" src="{{product.images[0]}}"
                                         class="post-image" alt="" *ngIf="product.images[0]!==undefined">
-                                      <img width="600" height="600" src="assets/mary/media/product/6-2.jpg"
+                                      <img width="600" height="600" src="{{product.images[1]}}"
                                         class="hover-image back" alt="">
                                         
                                     </a>
                                   </div>
                                   <div class="product-button">
                                     <div class="btn-add-to-cart" data-title="Add to cart">
-                                      <a rel="nofollow" href="#" class="product-btn button">Agregar al carro</a>
+                                      <a rel="nofollow"  class="product-btn button">Agregar al carro</a>
                                     </div>
 
                                     <span class="product-quickview" data-title="Quick View">
-                                      <a href="#" class="quickview quickview-button">Ver detalles <i
+                                      <a (click)="virtualRouter.setRoute('detail')" class="quickview quickview-button">Ver detalles <i
                                           class="icon-search"></i></a>
                                     </span>
                                   </div>
@@ -142,7 +142,7 @@
                                 <div class="products-content">
                                   <div class="contents">
 
-                                    <h3 class="product-title"><a (click)="virtualRouter.setRoute('detail')">{{product.name}}</a></h3>
+                                    <h3 class="product-title" ><a (click)="virtualRouter.setRoute('detail')">{{product.name}}</a></h3>
                                      <span class="price">${{product.price}}</span>
 
                                   </div>
@@ -159,79 +159,11 @@
               </div>
             </section>
 
-            <section class="section background-img bg-img-3 m-b-70">
-              <!-- Block Lookbook (Layout 2) -->
-              <div class="block block-lookbook layout-2">
-                <div class="lookbook-item">
-                  <div class="row">
-                    <div class="col-md-6 col-image">
-                      <div class="lookbook-container">
-                        <div class="lookbook-content">
-                          <div class="item">
-                            <img width="959" height="623" src="assets/mary/media/banner/lookbook-6-1.jpg"
-                              alt="Look Book 1">
-                            <div class="item-lookbook" style="left:52.97%;top:22.31%">
-                              <span class="number-lookbook">1</span>
-                              <div class="content-lookbook" style="right:35px; top:10px;">
-                                <div class="item-thumb">
-                                  <a href="#">
-                                    <img width="1000" height="1000" src="assets/mary/media/product/1.jpg" alt="">
-                                  </a>
-                                </div>
-                                <div class="content-lookbook-bottom">
-                                  <div class="item-title">
-                                    <a href="#">Medium Flat Hoops</a>
-                                  </div>
-                                  <span class="price">
-                                    <del aria-hidden="true"><span>$150.00</span></del>
-                                    <ins><span>$100.00</span></ins>
-                                  </span>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="item-lookbook" style="left:68.3%;top:70.95%">
-                              <span class="number-lookbook">1</span>
-                              <div class="content-lookbook" style="right:35px;bottom:10px;">
-                                <div class="item-thumb">
-                                  <a href="#">
-                                    <img width="1000" height="1000" src="assets/mary/media/product/2.jpg" alt="">
-                                  </a>
-                                </div>
-                                <div class="content-lookbook-bottom">
-                                  <div class="item-title">
-                                    <a href="#">Bold Pearl Hoop Earrings</a>
-                                  </div>
-                                  <span class="price">
-                                    <del aria-hidden="true"><span>$240.00</span></del>
-                                    <ins><span>$200.00</span></ins>
-                                  </span>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-6 col-text">
+            
 
-                      <div class="lookbook-intro-wrap position-center">
-                        <div class="lookbook-intro">
-                          <div class="sub-title">Discover This Week's In Australia</div>
-                          <h2 class="title">Spring Jewellery<br> Favourites</h2>
-                          <a href="#" class="button button-outline border-black thick-border animation-horizontal">SHOP
-                            COLLECTION</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
-
-            <section class="section section-padding m-b-70">
+            <!-- <section class="section section-padding m-b-70">
               <div class="section-container">
-                <!-- Block Testimonial -->
-                <div class="block block-testimonial layout-2">
+                 <div class="block block-testimonial layout-2">
                   <div class="block-widget-wrap">
                     <div class="testimonial-wrap slick-wrap">
                       <div class="slick-sliders" data-slidestoscroll="true" data-slidestoscroll="true" data-nav="1"
@@ -338,7 +270,7 @@
                   </div>
                 </div>
               </div>
-            </section>
+            </section> -->
 
             <!-- <section class="section section-padding top-border p-t-70 m-b-70">
               <div class="section-container">
@@ -554,7 +486,194 @@
                 </div>
               </div>
             </section> -->
+            <section class="section section-padding top-border p-t-70 m-b-70">
+              <div class="section-container">
+                <!-- Block Posts -->
+                <div class="block block-posts slider">
+                  <div class="block-widget-wrap">
+                    <div class="block-title">
+                      <div class="sub-title">Tips y actualidad</div>
+                      <h2>Consejos al estilo de CORAL</h2>
+                    </div>
+                    <div class="block-content">
+                      <div class="posts-wrap slick-wrap">
+                        <div class="slick-sliders" data-slidestoscroll="true" data-dots="0" data-nav="1" data-columns4="1" data-columns3="1" data-columns2="2" data-columns1="3" data-columns="3">
+                          <div class="post-grid post">	
+                            <div class="post-inner">
+                              <div class="post-image">
+                                <div class="post-date-wrap">
+                                  <div class="post-date">
+                                    <span>30</span><span>May</span>
+                                  </div>
+                                </div>
+                                <a class="post-thumbnail" href="blog-details-right.html">
+                                  <img width="720" height="484" src="assets/mary/media/blog/1.jpg" alt="Bridial Fair Collections 2023">
+                                </a>
+                              </div>
+                              <div class="post-content">
+                                <div class="post-categories">
+                                  <a href="blog-grid-right.html">Backpack</a>
+                                </div>
+                                <h2 class="post-title">
+                                  <a href="blog-details-right.html">Bridial Fair Collections 2023</a>
+                                </h2>
+                                <div class="btn-read-more">
+                                  <a class="read-more btn-underline" href="blog-details-right.html">Read more</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="post-grid post">	
+                            <div class="post-inner">
+                              <div class="post-image">
+                                <div class="post-date-wrap">
+                                  <div class="post-date">
+                                    <span>06</span><span>Jun</span>
+                                  </div>
+                                </div>
+                                <a class="post-thumbnail" href="blog-details-right.html">
+                                  <img width="720" height="484" src="assets/mary/media/blog/2.jpg" alt="Our Sterling Silver">
+                                </a>
+                              </div>
+                              <div class="post-content">
+                                <div class="post-categories">
+                                  <a href="blog-grid-right.html">Backpack</a>
+                                </div>
+                                <h2 class="post-title">
+                                  <a href="blog-details-right.html">Our Sterling Silver</a>
+                                </h2>
+                                <div class="btn-read-more">
+                                  <a class="read-more btn-underline" href="blog-details-right.html">Read more</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="post-grid post">	
+                            <div class="post-inner">
+                              <div class="post-image">
+                                <div class="post-date-wrap">
+                                  <div class="post-date">
+                                    <span>14</span><span>Aug</span>
+                                  </div>
+                                </div>
+                                <a class="post-thumbnail" href="blog-details-right.html">
+                                  <img width="720" height="484" src="assets/mary/media/blog/3.jpg" alt="New Season Modern Gold Earrings">
+                                </a>
+                              </div>
+                              <div class="post-content">
+                                <div class="post-categories">
+                                  <a href="blog-grid-right.html">Backpack</a>
+                                </div>
+                                <h2 class="post-title">
+                                  <a href="blog-details-right.html">New Season Modern Gold Earrings</a>
+                                </h2>
+                                <div class="btn-read-more">
+                                  <a class="read-more btn-underline" href="blog-details-right.html">Read more</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="post-grid post">	
+                            <div class="post-inner">
+                              <div class="post-image">
+                                <div class="post-date-wrap">
+                                  <div class="post-date">
+                                    <span>10</span><span>Sep</span>
+                                  </div>
+                                </div>
+                                <a class="post-thumbnail" href="blog-details-right.html">
+                                  <img width="720" height="484" src="assets/mary/media/blog/4.jpg" alt="Glossary of Jewelry Terms">
+                                </a>
+                              </div>
+                              <div class="post-content">
+                                <div class="post-categories">
+                                  <a href="blog-grid-right.html">Backpack</a>
+                                </div>
+                                <h2 class="post-title">
+                                  <a href="blog-details-right.html">Glossary of Jewelry Terms</a>
+                                </h2>
+                                <div class="btn-read-more">
+                                  <a class="read-more btn-underline" href="blog-details-right.html">Read more</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                </div>
+            </section>
+            <section class="section background-img bg-img-3 m-b-70">
+              <!-- Block Lookbook (Layout 2) -->
+              <div class="block block-lookbook layout-2">
+                <div class="lookbook-item">
+                  <div class="row">
+                    <div class="col-md-6 col-image">
+                      <div class="lookbook-container">
+                        <div class="lookbook-content">
+                          <div class="item">
+                            <img width="959" height="623" src="assets/mary/media/banner/lookbook-6-1.jpg"
+                              alt="Look Book 1">
+                            <div class="item-lookbook" style="left:52.97%;top:22.31%">
+                              <span class="number-lookbook">1</span>
+                              <div class="content-lookbook" style="right:35px; top:10px;">
+                                <div class="item-thumb">
+                                  <a href="#">
+                                    <img width="1000" height="1000" src="assets/mary/media/product/1.jpg" alt="">
+                                  </a>
+                                </div>
+                                <div class="content-lookbook-bottom">
+                                  <div class="item-title">
+                                    <a href="#">Medium Flat Hoops</a>
+                                  </div>
+                                  <span class="price">
+                                    <del aria-hidden="true"><span>$150.00</span></del>
+                                    <ins><span>$100.00</span></ins>
+                                  </span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="item-lookbook" style="left:68.3%;top:70.95%">
+                              <span class="number-lookbook">1</span>
+                              <div class="content-lookbook" style="right:35px;bottom:10px;">
+                                <div class="item-thumb">
+                                  <a href="#">
+                                    <img width="1000" height="1000" src="assets/mary/media/product/2.jpg" alt="">
+                                  </a>
+                                </div>
+                                <div class="content-lookbook-bottom">
+                                  <div class="item-title">
+                                    <a href="#">Bold Pearl Hoop Earrings</a>
+                                  </div>
+                                  <span class="price">
+                                    <del aria-hidden="true"><span>$240.00</span></del>
+                                    <ins><span>$200.00</span></ins>
+                                  </span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-text">
 
+                      <div class="lookbook-intro-wrap position-center">
+                        <div class="lookbook-intro">
+                          <div class="sub-title">Discover This Week's In Australia</div>
+                          <h2 class="title">Spring Jewellery<br> Favourites</h2>
+                          <a href="#" class="button button-outline border-black thick-border animation-horizontal">SHOP
+                            COLLECTION</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            
             <section class="section m-b-0">
               <!-- Block Instagram -->
               <div class="block block-instagram slider no-space">
@@ -562,32 +681,32 @@
                   <div class="slick-sliders fullwidth" data-dots="false" data-item_row="1" data-nav="false"
                     data-columns4="1" data-columns3="2" data-columns2="3" data-columns1="4" data-columns="5">
                     <div class="item slick-slide">
-                      <a class="instagram" href="#">
+                      <a class="instagram" href="https://www.instagram.com/coralshop_mayvejarano/" target="_blank" >
                         <img width="450" height="450" src="assets/mary/media/banner/instagram-1.jpg" alt="Image Slider">
                       </a>
                     </div>
                     <div class="item slick-slide">
-                      <a class="instagram" href="#">
+                      <a class="instagram" href="https://www.instagram.com/coralshop_mayvejarano/" target="_blank" >
                         <img width="450" height="450" src="assets/mary/media/banner/instagram-2.jpg" alt="Image Slider">
                       </a>
                     </div>
                     <div class="item slick-slide">
-                      <a class="instagram" href="#">
+                      <a class="instagram" href="https://www.instagram.com/coralshop_mayvejarano/" target="_blank" >
                         <img width="450" height="450" src="assets/mary/media/banner/instagram-3.jpg" alt="Image Slider">
                       </a>
                     </div>
                     <div class="item slick-slide">
-                      <a class="instagram" href="#">
+                      <a class="instagram" href="https://www.instagram.com/coralshop_mayvejarano/" target="_blank" >
                         <img width="450" height="450" src="assets/mary/media/banner/instagram-4.jpg" alt="Image Slider">
                       </a>
                     </div>
                     <div class="item slick-slide">
-                      <a class="instagram" href="#">
+                      <a class="instagram" href="https://www.instagram.com/coralshop_mayvejarano/" target="_blank" >
                         <img width="450" height="450" src="assets/mary/media/banner/instagram-5.jpg" alt="Image Slider">
                       </a>
                     </div>
                     <div class="item slick-slide">
-                      <a class="instagram" href="#">
+                      <a class="instagram" href="https://www.instagram.com/coralshop_mayvejarano/" target="_blank" >
                         <img width="450" height="450" src="assets/mary/media/banner/instagram-6.jpg" alt="Image Slider">
                       </a>
                     </div>

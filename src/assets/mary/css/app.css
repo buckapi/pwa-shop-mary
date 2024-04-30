@@ -10759,7 +10759,7 @@ body:not([class~=home]) [class~=site-navigation] ul > li[class~=level-0] > [clas
 }
 
 .site-main .page-title {
-  padding-top: 63.75pt;
+  padding-top: 150pt;
 }
 
 [class~=site-main] [class~=page-title] [class~=content-title-heading] {
